@@ -1,0 +1,10 @@
+<h2 mat-dialog-title>{{ data.character.name }}</h2>
+<div mat-dialog-content>
+  <img [src]="data.character.image" alt="" />
+  <h2>Lugar: {{ data.character.location.name }}</h2>
+  <h2>Origen: {{ data.character.origin.name }}</h2>
+  <h2>Especie: {{ data.character.species }}</h2>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>Salir</button>
+</div>

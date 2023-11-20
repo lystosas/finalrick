@@ -1,0 +1,33 @@
+<p>
+  <mat-toolbar color="primary">
+    <span>The Rick and Morty</span>
+    <span class="example-spacer"></span>
+  </mat-toolbar>
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Info</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      *ngFor="let personaje of personajes.results"
+      (click)="openDialogo(personaje)"
+    >
+      <td>{{ personaje.id }}</td>
+      <td>{{ personaje.name }}</td>
+      <td>
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example home icon"
+          fontIcon="info"
+          color="primary"
+        ></mat-icon>
+      </td>
+    </tr>
+  </tbody>
+</table>
